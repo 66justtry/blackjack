@@ -11,6 +11,8 @@ private:
     int value;
     Card(string, int);
     friend class Deck;
+public:
+    int GetValue();
 };
 
 #endif // CARD_H
