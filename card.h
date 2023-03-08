@@ -1,7 +1,6 @@
-#ifndef CARD_H
-#define CARD_H
+#pragma once
 #include <string>
-#include "deck.h"
+
 
 using namespace std;
 
@@ -9,10 +8,9 @@ class Card {
 private:
     string path;
     int value;
-    Card(string, int);
     friend class Deck;
 public:
     int GetValue();
+    Card(string, int);
 };
 
-#endif // CARD_H

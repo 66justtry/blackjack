@@ -1,5 +1,4 @@
-#ifndef DECK_H
-#define DECK_H
+#pragma once
 #define CARD_NAME_COUNT 13
 #define CARD_SUIT_COUNT 4
 #include <string>
@@ -16,10 +15,8 @@ private:
     string path; //to do: default path
 public:
     Deck();
-    unique_ptr<stack<Card>> cards;
+    stack<Card> cards;
     void SetPath(string);
 };
 
 
-
-#endif

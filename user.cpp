@@ -1,6 +1,6 @@
 #include <vector>
 #include "user.h"
-#include "card.h"
+
 
 using namespace std;
 
@@ -24,3 +24,4 @@ int User::GetSum() {
     }
     return sum;
 }
+

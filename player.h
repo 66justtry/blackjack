@@ -1,3 +1,4 @@
+#pragma once
 #include <vector>
 #include "user.h"
 #include "card.h"
@@ -17,4 +18,8 @@ public:
     void Hit(Deck*);
     void Stand(); //add code or remove from user class
     int GetBalance();
+    void SetBalance();
 };
+
+
+

@@ -4,7 +4,7 @@
 using namespace std;
 
 Player* Player::GetInstance() {
-    if (instancePtr == NULL) //nullptr ??
+    if (instancePtr == nullptr) //nullptr ??
         instancePtr = new Player;
     return instancePtr;
 }
@@ -19,6 +19,16 @@ int Player::GetBalance() {
 }
 
 void Player::Hit(Deck* deck) {
-    hand.push_back(deck->cards->top());
-    deck->cards->pop();
+    hand.push_back(deck->cards.top());
+    deck->cards.pop();
 }
+
+void Player::Stand() {
+
+}
+
+void Player::SetBalance() {
+    balance = 10;
+    //to do: get balance from file
+}
+

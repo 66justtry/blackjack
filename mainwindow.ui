@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="button1">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -27,7 +27,7 @@
      <string>PushButton</string>
     </property>
    </widget>
-   <widget class="QSpinBox" name="spinBox">
+   <widget class="QSpinBox" name="spinBox1">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -37,7 +37,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="label1">
     <property name="geometry">
      <rect>
       <x>280</x>

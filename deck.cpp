@@ -14,7 +14,7 @@ int CardValue[] = {2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11};
 string CardSuit[] = {"Clubs", "Diamonds", "Hearts", "Spades"};
 
 Deck::Deck() {
-    cards = make_unique<stack<Card>>();
+    cards = stack<Card>();
     tuple<string, int> temp[CARD_NAME_COUNT * CARD_SUIT_COUNT];
     /*string paths[CARD_NAME_COUNT * CARD_SUIT_COUNT];
     for (int i = 0; i < CARD_NAME_COUNT; i++) {
@@ -30,7 +30,7 @@ Deck::Deck() {
     //generating a deck
     for (int i = CARD_NAME_COUNT * CARD_SUIT_COUNT - 1; i >= 0; i--) {
         int pos = rand() % (i + 1);
-        cards->push(Card(get<0>(temp[pos]), get<1>(temp[pos])));
+        cards.push(Card(get<0>(temp[pos]), get<1>(temp[pos])));
         temp[pos].swap(temp[i]);
     }
 }

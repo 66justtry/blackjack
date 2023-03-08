@@ -1,6 +1,5 @@
 #include <string>
 #include "card.h"
-#include "deck.h"
 
 using namespace std;
 
