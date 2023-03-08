@@ -14,9 +14,9 @@ using namespace std;
 class Deck {
 private:
     string path; //to do: default path
-    unique_ptr<stack<Card>> cards;
 public:
     Deck();
+    unique_ptr<stack<Card>> cards;
     void SetPath(string);
 };
 
